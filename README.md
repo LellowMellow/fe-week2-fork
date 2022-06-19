@@ -128,6 +128,7 @@ const ColorWrapper = styled.div`
 # ❓ 실습 3번문제
  MediaCard 컴포넌트를 제작하여라.
  아래 사진과 최대한 유사하도록 컴포넌트를 제작하여라.<br>
+ 
  <img width="668" alt="image" src="https://user-images.githubusercontent.com/77886826/166138976-2db612eb-7b7a-4a7c-882a-3199b9d55ab7.png">
 
 ### ⭐ 제한조건 
