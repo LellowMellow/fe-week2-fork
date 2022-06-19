@@ -14,13 +14,58 @@ ex) <br>
 다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 변경할 것<br>
 
 ## 🔥 Solution
- **Styled Component**를 활용하여 **React Component**에서 전달받은 **props**로 가변 스타일링이 가능합니다.
+**Styled Component**를 활용하여 **React Component**에서 전달받은 'props'로 가변 스타일링이 가능합니다.
  
- **Styled Component**를 사용하기 위해서는 `styled-components` 패키지에서 `styled` 함수를 import해야합니다.
- ```javascript
- import styled from "styled-components";
- ```
+**Styled Component**를 사용하기 위해서는 `styled-components` 패키지에서 `styled` 함수를 import해야합니다.
+```javascript
+import styled from "styled-components";
+```
  
+**Styled Component**는 아래와 같이 선언할 수 있으며, 전달받은 `props`의 값에 따라 바뀔 수 있도록 **삼항 연산자**로 작성해주었습니다.
+```javascript
+const StyledText = styled.div`
+  color: ${(props) => (props.color ? props.color : "black")};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : "24")}px;
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : "400")};
+`;
+```
+
+위와 같이 작성한 **삼항 연산자**는 **단축 평가 (Short circuit evaluation)** 방식으로 아래와 같이 더 간결하게 표현이 가능합니다.
+```javascript
+const StyledText = styled.div`
+  color: ${(props) => (props.color || "black")};
+  font-size: ${(props) => (props.fontSize || "24")}px;
+  font-weight: ${(props) => (props.fontWeight || "400")};
+`;
+```
+
+이렇게 생성한 **Styled Component**를 아래와 같이 **React Component**를 작성하여 사용할 수 있습니다.
+```javascript
+const TextBox = (props) => {
+  return (
+    <StyledText
+      color={props.color}
+      fontSize={props.fontSize}
+      fontWeight={props.fontWeight}
+    >
+      {props.children}
+    </StyledText>
+  );
+};
+```
+
+이는 `App.js'에 다음과 같이 작성해 사용할 수 있습니다.
+```javascript
+<TextBox color="red">"hihi"</TextBox>
+<TextBox color="blue" fontWeight="400" fontSize="300">
+"hihi"
+</TextBox>
+```
+- 첫 번째는 color만 인자로 넘겨준 경우에 해당
+- 두 번째는 color와 fontWeight, fontSize를 인자로 넘겨준 경우에 해당
+이에 대한 결과는 아래와 같습니다.
+![image](https://user-images.githubusercontent.com/79556112/174468400-f4d10939-ac8b-4523-baa4-b89f1d4d4091.png)
+
 
 # 실습 2번문제 
  색상코드를 입력하면 색상과 text가 나오는 카드를 만들어봅시다! 제한된 조건 속에서 진행해 주시길 바랍니다!!
