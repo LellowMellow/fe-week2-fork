@@ -69,6 +69,7 @@ const TextBox = (props) => {
 
 # ❓ 실습 2번문제 
  색상코드를 입력하면 색상과 text가 나오는 카드를 만들어라. 제한된 조건 속에서 진행할 것.
+ 
  <img width="366" alt="image" src="https://user-images.githubusercontent.com/77886826/166141001-f3964a02-e290-4a8f-bc6e-ce94962f1b36.png">
 <br>초기 사진. 아래와 같이 작동하도록 작성할 것.
  ### ⭐ 목표)
@@ -76,8 +77,7 @@ const TextBox = (props) => {
 <img width="336" alt="image" src="https://user-images.githubusercontent.com/77886826/166140681-4c28bf65-0107-4aae-989e-be71e8e176b5.png">
 <img width="335" alt="image" src="https://user-images.githubusercontent.com/77886826/166140718-0a4599f1-6b4b-4048-8239-685a207fc5f1.png">
 <img width="396" alt="image" src="https://user-images.githubusercontent.com/77886826/166140696-26ece472-220b-450f-90cf-37ac346ee8de.png">
-<br>
-위와 같이 입력받음.
+<br>위와 같이 입력받음.
 
 ### ⭐ 제한조건 
  - ColorCard들 사이 간격은 10px
