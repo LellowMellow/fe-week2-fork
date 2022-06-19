@@ -67,23 +67,47 @@ const TextBox = (props) => {
 ![image](https://user-images.githubusercontent.com/79556112/174468400-f4d10939-ac8b-4523-baa4-b89f1d4d4091.png)
 
 
-# 실습 2번문제 
- 색상코드를 입력하면 색상과 text가 나오는 카드를 만들어봅시다! 제한된 조건 속에서 진행해 주시길 바랍니다!!
+# ❓ 실습 2번문제 
+ 색상코드를 입력하면 색상과 text가 나오는 카드를 만들어라. 제한된 조건 속에서 진행할 것.
  <img width="366" alt="image" src="https://user-images.githubusercontent.com/77886826/166141001-f3964a02-e290-4a8f-bc6e-ce94962f1b36.png">
-<br>현재 사진입니다! 아래와 같게 만들어주세요!
- ### 목표)
+<br>초기 사진. 아래와 같이 작동하도록 작성할 것.
+ ### ⭐ 목표)
 <img width="314" alt="image" src="https://user-images.githubusercontent.com/77886826/166140624-39232d3e-becb-45c9-826c-e42b3698f61e.png">
 <img width="336" alt="image" src="https://user-images.githubusercontent.com/77886826/166140681-4c28bf65-0107-4aae-989e-be71e8e176b5.png">
 <img width="335" alt="image" src="https://user-images.githubusercontent.com/77886826/166140718-0a4599f1-6b4b-4048-8239-685a207fc5f1.png">
 <img width="396" alt="image" src="https://user-images.githubusercontent.com/77886826/166140696-26ece472-220b-450f-90cf-37ac346ee8de.png">
 <br>
-다음과 같이 입력 받습니다.
+위와 같이 입력받음.
 
-### 제한조건 
+### ⭐ 제한조건 
+ - ColorCard들 사이 간격은 10px
+ - ColorCard를 서로다른 props를 통해서 5개 이상 화면에 출력
 
- - 빈칸을 채워 다음 사진과 같게 구현합니다!
- - ColorCard들 사이 간격은 10px 로 합니다.
- - ColorCard를 서로다른 props를 통해서 5개 이상 화면에 출력합니다.
+## 🔥 Solution
+
+우선 **ColorCard 전체를 감싸는 Styled Component**와 **내부에 색상 코드에 따른 색상을 표현할 Styled Component**를 작성합니다.
+
+```javascript
+const CardWrapper = styled.div`
+  width: 300px;
+  height: 430px;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+`;
+
+const ColorWrapper = styled.div`
+  width: 300px;
+  height: 350px;
+  margin: 0px;
+  border: 1px solid black;
+  background-color: ${(props) => (props.color || "white")};
+`;
+```
+가장 바깥을 담당할 component에는 모서리에 곡률을 주기 위해 `border-radius`를 추가해주었으며, 안에 담길 요소의 크기가 더 크더라도 border 바깥으로 표시되지 않도록 `overflow: hidden;`을 추가해주었습니다.
 
 
 # 실습 3번문제
