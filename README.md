@@ -8,8 +8,9 @@
  - text-weight , text-size 를 props를 통해서 입력받아서 수정
  
 ex) <br>
-<img width="538" alt="image" src="https://user-images.githubusercontent.com/77886826/166138795-c60b1f82-9cd7-47fb-835a-04c6e0a4b02b.png"><br>
+![image](https://user-images.githubusercontent.com/79556112/174468834-f5687b0f-54fc-4674-8ab0-a1706dd5f0d8.png)<br>
 초기 상태<br>
+
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/77886826/166138831-708166b3-5251-4956-ba19-f617085ce97e.png"><br>
 다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 변경할 것<br>
 
