@@ -14,7 +14,7 @@ ex) <br>
 다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 변경할 것<br>
 
 ## 🔥 Solution
-**Styled Component**를 활용하여 **React Component**에서 전달받은 'props'로 가변 스타일링이 가능합니다.
+**Styled Component**를 활용하여 **React Component**에서 전달받은 `props`로 가변 스타일링이 가능합니다.
  
 **Styled Component**를 사용하기 위해서는 `styled-components` 패키지에서 `styled` 함수를 import해야합니다.
 ```javascript
@@ -54,7 +54,7 @@ const TextBox = (props) => {
 };
 ```
 
-이는 `App.js'에 다음과 같이 작성해 사용할 수 있습니다.
+이는 `App.js`에 다음과 같이 작성해 사용할 수 있습니다.
 ```javascript
 <TextBox color="red">"hihi"</TextBox>
 <TextBox color="blue" fontWeight="400" fontSize="300">
