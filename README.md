@@ -1,10 +1,10 @@
-# 멋쟁이 사자처럼 10기 FE 2주차 과제 🦁
+# 🦁 멋쟁이 사자처럼 10기 FE 2주차 과제 🦁
 - React 강의 이후 첫 과제입니다. React에서 styled component와 관련된 개념을 활용하여 해결할 수 있는 과제였습니다.
 
-# 실습 1번문제
+# ❓ 실습 1번문제
  Text Component를 수정하여 재사용이 가능하도록 아래와 같이 구현하여라.
 
-### 제한조건 
+### ⭐ 제한조건 
  - text-weight , text-size 를 props를 통해서 입력받아서 수정
  
 ex) <br>
@@ -13,7 +13,7 @@ ex) <br>
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/77886826/166138831-708166b3-5251-4956-ba19-f617085ce97e.png"><br>
 다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 변경할 것<br>
 
-### Solution
+## 🔥 Solution
  **Styled Component**를 활용하여 **React Component**에서 전달받은 **props**로 가변 스타일링이 가능합니다.
  
  **Styled Component**를 사용하기 위해서는 `styled-components` 패키지에서 `styled` 함수를 import해야합니다.
