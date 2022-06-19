@@ -122,29 +122,22 @@ const ColorWrapper = styled.div`
 
 `App.js`에서는 위와 같이 사용하였으며, 이에 대한 결과는 아래와 같습니다.
 
-![image](https://user-images.githubusercontent.com/79556112/174469105-b487e1c1-5ae2-4379-b64f-25d0b2ca6ebf.png)
+![image](https://user-images.githubusercontent.com/79556112/174469163-a3793ea3-6e4c-4ba3-9e47-86ef5e24a010.png)
 
 
-# 실습 3번문제
- 대망의 끝판왕 MediaCard 컴포넌트를 제작합니다!
- 무슨 방법을 사용하셔도 괜찮습니다. 최선을 다해서 사진과 유사한 미디어 카드를 만들어주세요! FE는 필수소양은 디자인을 완벽하게 같게 구사하는 능력입니다.<br>
+# ❓ 실습 3번문제
+ MediaCard 컴포넌트를 제작하여라.
+ 아래 사진과 최대한 유사하도록 컴포넌트를 제작하여라.<br>
  <img width="668" alt="image" src="https://user-images.githubusercontent.com/77886826/166138976-2db612eb-7b7a-4a7c-882a-3199b9d55ab7.png">
 
-요런 컴포넌트를 만들어 주세요! 
+### ⭐ 제한조건 
+ - styled-component 를 이용
+ - 사진의 1번은 url을 props 로 입력받음
+ - 사진의 2번은 미디어카드의 제목입니다. props를 통해 입력받음
+ - 사진의 3번은 미디어 카드의 내용입니다. props를 통해 입력받음
+ - 사진의 4번은 미디어 카드의 버튼의 색 입니다. props를 통해 입력받음
+ - 서로 다른 props를 입력받은 미디어 카드를 최소 5개 이상 작성할 것
 
-### 제한조건 
- - styled-component 를 이용합니다.
- - 사진의 1번은 url을 props 로 입력받습니다.
- - 사진의 2번은 미디어카드의 제목입니다. props를 통해 입력받습니다.
- - 사진의 3번은 미디어 카드의 내용입니다. props를 통해 입력받습니다.
- - 사진의 4번은 미디어 카드의 버튼의 색 입니다. props를 통해 입력받습니다.
- - 서로 다른 props를 입력받은 미디어 카드를 최소 5개 이상 만듭니다.
-
-# 제출시 필수 사항
-- 실습 모든 문제를 포함합니다.
-- 실습의 각 문제마다 스크린샷을 포함합니다.
-- pr 의 제목은 | [내이름] 제목 |으로 합니다.
-ex) [이성인] 리엑트는 너무 재밋어!
-
+## 🔥 Solution
 
 
