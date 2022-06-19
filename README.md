@@ -9,9 +9,9 @@
  
 ex) <br>
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/77886826/166138795-c60b1f82-9cd7-47fb-835a-04c6e0a4b02b.png"><br>
-- 초기 상태<br>
+초기 상태<br>
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/77886826/166138831-708166b3-5251-4956-ba19-f617085ce97e.png"><br>
-- 다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 변경할 것<br>
+다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 변경할 것<br>
 
 ### Solution
  **Styled Component**를 활용하여 **React Component**에서 전달받은 **props**로 가변 스타일링이 가능합니다.
