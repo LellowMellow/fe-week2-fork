@@ -11,7 +11,6 @@ const CardWrapper = styled.div`
   padding: 0px;
   overflow: hidden;
   text-align: center;
-  //
 `;
 
 const ColorWrapper = styled.div`
@@ -19,8 +18,7 @@ const ColorWrapper = styled.div`
   height: 350px;
   margin: 0px;
   border: 1px solid black;
-  background-color: ${(props) => (props.color ? props.color : "white")};
-  //
+  background-color: ${(props) => props.color || "white"};
 `;
 
 const ColorCard = (props) => {

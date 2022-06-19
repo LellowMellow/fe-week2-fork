@@ -1,18 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import TextBox from "./component/Text";
 import App from "./App";
-import MediaApp from "./MediaApp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <TextBox color="blue">"hihi"</TextBox>
-    <TextBox color="blue" fontWeight="400" fontSize="16">
-      "hihi"
-    </TextBox>
     <App />
-    <MediaApp />
   </React.StrictMode>
 );
 

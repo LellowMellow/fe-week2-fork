@@ -1,4 +1,3 @@
-// 여기다가 만드시면 됩니다!!!
 import React from "react";
 import styled from "styled-components";
 
@@ -12,7 +11,6 @@ const CardWrapper = styled.div`
   display: block;
   margin: 50px;
   padding-bottom: 12.5px;
-  //
 `;
 
 const ImageBox = styled.img`
@@ -54,7 +52,7 @@ const TextBox = styled.p`
 const ButtonWrap = styled.div`
   width: 328px;
   height: 52px;
-  background-color: ${(props) => (props.color ? props.color : "#4872E4")};
+  background-color: ${(props) => props.color || "#4872E4"};
   border-radius: 20px;
   margin: 12.5px;
   margin-top: 30px;
@@ -81,14 +79,10 @@ const Button = styled.button`
 const MediaCard = (props) => {
   return (
     <CardWrapper>
-      <ImageBox
-        src={props.url ? props.url : "./mediacard_default_img.png"}
-      ></ImageBox>
-      <TitleBox>{props.heading ? props.heading : "Heading"}</TitleBox>
+      <ImageBox src={props.url || "./mediacard_default_img.png"}></ImageBox>
+      <TitleBox>{props.heading || "Heading"}</TitleBox>
       <TextBox>
-        {props.text
-          ? props.text
-          : "This is a short description about the card."}
+        {props.text || "This is a short description about the card."}
       </TextBox>
       <ButtonWrap color={props.color}>
         <Button>Action</Button>
