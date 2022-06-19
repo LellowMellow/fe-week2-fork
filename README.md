@@ -85,7 +85,7 @@ const TextBox = (props) => {
 
 ## 🔥 Solution
 
-우선 **ColorCard 전체를 감싸는 Styled Component**와 **내부에 색상 코드에 따른 색상을 표현할 Styled Component**를 작성합니다.
+우선 새로 **ColorCard component directory**를 생성, 내부에 `index.js`를 생성하고, 내부에 **ColorCard 전체를 감싸는 Styled Component**와 **내부에 색상 코드에 따른 색상을 표현할 Styled Component**를 작성합니다.
 
 ```javascript
 const CardWrapper = styled.div`
@@ -113,12 +113,15 @@ const ColorWrapper = styled.div`
 
 **React Component**에는 아래와 같이 위에서 작성한 **Styled Component**와 더불어 1번 문제에서 작성한 `Text` component를 활용하여, **Textbox에 전달해준 색상 코드값으로 Text Color와 `ColorWarppe`r의 `background-color`까지 지정**하도록 하였습니다.
 
+
 ```javascript
 <ColorCard color="black" />
 <ColorCard color="#1E82CD" />
 <ColorCard color="#FFAAFF" />
 ```
+
 `App.js`에서는 위와 같이 사용하였으며, 이에 대한 결과는 아래와 같습니다.
+
 ![image](https://user-images.githubusercontent.com/79556112/174469105-b487e1c1-5ae2-4379-b64f-25d0b2ca6ebf.png)
 
 
