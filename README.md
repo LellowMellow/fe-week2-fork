@@ -109,6 +109,18 @@ const ColorWrapper = styled.div`
 ```
 가장 바깥을 담당할 component에는 모서리에 곡률을 주기 위해 `border-radius`를 추가해주었으며, 안에 담길 요소의 크기가 더 크더라도 border 바깥으로 표시되지 않도록 `overflow: hidden;`을 추가해주었습니다.
 
+내부에 색상을 표현할 component는 `background-color`를 `props`로 전달받아 색상 코드에 따라 표현하도록 작성하였습니다. (default value는 'white'로 지정)
+
+**React Component**에는 아래와 같이 위에서 작성한 **Styled Component**와 더불어 1번 문제에서 작성한 `Text` component를 활용하여, **Textbox에 전달해준 색상 코드값으로 Text Color와 `ColorWarppe`r의 `background-color`까지 지정**하도록 하였습니다.
+
+```javascript
+<ColorCard color="black" />
+<ColorCard color="#1E82CD" />
+<ColorCard color="#FFAAFF" />
+```
+`App.js`에서는 위와 같이 사용하였으며, 이에 대한 결과는 아래와 같습니다.
+![image](https://user-images.githubusercontent.com/79556112/174469105-b487e1c1-5ae2-4379-b64f-25d0b2ca6ebf.png)
+
 
 # 실습 3번문제
  대망의 끝판왕 MediaCard 컴포넌트를 제작합니다!
