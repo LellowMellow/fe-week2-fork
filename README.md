@@ -1,32 +1,23 @@
 # 멋쟁이 사자처럼 10기 FE 2주차 과제 🦁
-
-반갑습니다 여러분!!☺️ 
-2주차부터 약 4주간 함께 진행할 10기 운영진 이성인입니다 ☺️ 
-react는 크게 어렵지 않습니다! 다같이 열심히 하시죠 ㅎㅎ
-
-# 실습 진행방법 
-기존의 실습들과 동일하게 진행됩니다
- - 이 레포를 fork 한다!
- - fork하여 이동한 자신의 레포에서 깃크라켄을 통해 클론을 받습니다.
- - 클론을 받은 파일을 vs 코드에서 엽니다!
- - 처음 시작 시에 npm i 입력!
- - vs 코드에서 터미널을 열어서 npm run start 를 입력하면 코드가 실행됩니다!
- 
-이번 실습은 3차에 걸쳐서 진행됩니다! 마지막까지 열심히 진행해보시죠 ㅎㅎ 
+- React 강의 이후 첫 과제입니다. React에서 styled component와 관련된 개념을 활용하여 해결할 수 있는 과제였습니다.
 
 # 실습 1번문제
- 여러분은 프론트 엔드 작업을 진행하시면서 글자에 효과를 어떻게 주셨나요? 매번 id, class를 통해서 받지 않으셨나요?
- Text 컴포넌트를 수정하며 다양한 순간에 재사용성이 뛰어난 코드를 만들어봅시다!
+ Text Component를 수정하여 재사용이 가능하도록 아래와 같이 구현하여라.
 
 ### 제한조건 
- - text-weight , text-size 를 props를 통해서 입력받아서 수정합니다. 
+ - text-weight , text-size 를 props를 통해서 입력받아서 수정
  
 ex) <br>
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/77886826/166138795-c60b1f82-9cd7-47fb-835a-04c6e0a4b02b.png"><br>
-현재 상태입니다.<br>
+- 초기 상태<br>
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/77886826/166138831-708166b3-5251-4956-ba19-f617085ce97e.png"><br>
-다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 바꾸어 주세요
+- 다음과 같이 입력받을 때 font-weight, font-size 등이 수정되도록 변경할 것
 
+### Solution
+ **Styled Component**를 활용하여 **React Component**에서 전달받은 **props**로 가변 스타일링이 가능합니다.
+ 
+ **Styled Component**를 사용하기 위해서는 `styled-components` 패키지에서 `styled` 함수를 import해야합니다.
+ 
 
 # 실습 2번문제 
  색상코드를 입력하면 색상과 text가 나오는 카드를 만들어봅시다! 제한된 조건 속에서 진행해 주시길 바랍니다!!
