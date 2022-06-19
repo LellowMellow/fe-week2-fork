@@ -228,3 +228,41 @@ const Button = styled.button`
   font-size: 19px;
 `;
 ```
+Button을 두 개의 Component로 나누어서 작성한 이유는 그라데이션 효과를 주기 위함입니다. `ButtonWrap` component는 Button의 색상을 표현하며, `Button` component는 Button 위에 그라데이션을 표현합니다. `linear-gradient`를 이용하여 오른쪽으로 갈 수록 밝아지도록 작성하였습니다.
+
+위에서 작성한 **Styled Component**를 **React Component**에 아래와 같이 작성하여 사용합니다.
+
+```javascript
+const MediaCard = (props) => {
+  return (
+    <CardWrapper>
+      <ImageBox src={props.url || "./mediacard_default_img.png"}></ImageBox>
+      <TitleBox>{props.heading || "Heading"}</TitleBox>
+      <TextBox>
+        {props.text || "This is a short description about the card."}
+      </TextBox>
+      <ButtonWrap color={props.color}>
+        <Button>Action</Button>
+      </ButtonWrap>
+    </CardWrapper>
+  );
+};
+```
+
+각 `props` 값은 값을 넘겨받지 않았을 경우에 넘겨줄 기본 값을 지정해주기 위해 **삼항 연산자**를 이용하여 작성하였습니다. 이는 `App.js`에서 아래와 같은 form으로 사용하였습니다.
+
+```javascript
+<MediaCard />
+<MediaCard
+ color="red"
+ url="https://miro.medium.com/max/3600/0*n-2bW82Z6m6U2bij.jpeg"
+ heading="CODING CAT"
+ text="Oh, he is JUST coding!! How adorable!!"
+/>
+```
+
+이에 대한 결과는 아래와 같습니다.
+
+![image](https://user-images.githubusercontent.com/79556112/174470018-e57fbc97-a7bd-4307-8294-6f2328407776.png)
+
+
