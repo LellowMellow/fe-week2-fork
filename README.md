@@ -141,4 +141,90 @@ const ColorWrapper = styled.div`
 
 ## 🔥 Solution
 
+우선 새로 **MediaCard component directory**를 생성, 내부에 `index.js`를 생성하고, 내부에 **MediaCard 전체를 감싸는 Styled Component**와 **상단의 image를 담을 Styled Component**를 작성합니다.
 
+```javascript
+const CardWrapper = styled.div`
+  width: 350px;
+  height: 393px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 50px;
+  padding-bottom: 12.5px;
+`;
+
+const ImageBox = styled.img`
+  width: 328px;
+  height: 197px;
+  border-radius: 23px;
+  margin-top: 9px;
+  margin-bottom: 0px;
+  overflow: hidden;
+`;
+```
+예시 이미지에 card 뒤로 그림자가 있었으므로, 이를 위해 `box-shadow`와 곡률을 주기 위해 `border-radius`를 추가해줍니다.
+ 
+이미지 하단에 Text를 넣기 위해서 **Text title에 해당하는 Styled Component**와 **text를 담을 Styled Component**를 작성합니다.
+
+```javascript
+const TitleBox = styled.p`
+  width: 325px;
+  height: 42px;
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  text-align: left;
+  color: #2e2e2e;
+  font-size: 27px;
+  font-weight: bold;
+`;
+
+const TextBox = styled.p`
+  width: 325px;
+  height: 48px;
+  border-radius: 20px;
+  margin: 10px;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  font-weight: 200;
+  color: #2e2e2e;
+  font-size: 20px;
+`;
+```
+
+Text 하단에 있는 버튼을 위해 **Button을 감쌀 Styled Component**와 **Button Styled Component**를 작성합니다.
+
+```javascript
+const ButtonWrap = styled.div`
+  width: 328px;
+  height: 52px;
+  background-color: ${(props) => props.color || "#4872E4"};
+  border-radius: 20px;
+  margin: 12.5px;
+  margin-top: 30px;
+  line-height: 50px;
+  color: white;
+  display: flex;
+  overflow: hidden;
+`;
+
+const Button = styled.button`
+  width: 328px;
+  height: 52px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  line-height: 50px;
+  color: white;
+  font-size: 19px;
+`;
+```
