@@ -17,6 +17,9 @@ ex) <br>
  **Styled Component**를 활용하여 **React Component**에서 전달받은 **props**로 가변 스타일링이 가능합니다.
  
  **Styled Component**를 사용하기 위해서는 `styled-components` 패키지에서 `styled` 함수를 import해야합니다.
+ ```javascript
+ import styled from "styled-components";
+ ```
  
 
 # 실습 2번문제 
