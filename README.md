@@ -8,7 +8,7 @@
  - text-weight , text-size 를 props를 통해서 입력받아서 수정
  
 ex) <br>
-![image](https://user-images.githubusercontent.com/79556112/174468834-f5687b0f-54fc-4674-8ab0-a1706dd5f0d8.png)<br>
+![image](https://user-images.githubusercontent.com/79556112/174468902-cc1b7998-4c6f-4cd0-93f2-b5f0034aba13.png)<br>
 초기 상태<br>
 
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/77886826/166138831-708166b3-5251-4956-ba19-f617085ce97e.png"><br>
@@ -71,7 +71,7 @@ const TextBox = (props) => {
 # ❓ 실습 2번문제 
  색상코드를 입력하면 색상과 text가 나오는 카드를 만들어라. 제한된 조건 속에서 진행할 것.
  
- <img width="366" alt="image" src="https://user-images.githubusercontent.com/77886826/166141001-f3964a02-e290-4a8f-bc6e-ce94962f1b36.png">
+![image](https://user-images.githubusercontent.com/79556112/174468877-e0642033-55ee-492c-a1b7-02b3e30df9eb.png)
 <br>초기 사진. 아래와 같이 작동하도록 작성할 것.
 
  ### ⭐ 목표)
